@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+}
+
+.main{
+    display: flex;
+}
+
+
+
+.NavLogo{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.navigation{
+    width: 20vw;
+    height: 85vh;
+    border: 2px solid black;
+}
+
+.logo{
+    width: 20vw;
+    height: 15vh;
+    border: 2px solid black;
+}
+
+#logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.FeedSbar{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.feed{
+    width: 60vw;
+    height: 15vh;
+    border: 2px solid black;
+}
+
+.sbar{
+    width: 60vw;
+    height: 85vh;
+    border: 2px solid black;
+}
+
+
+
+.Friends{
+    width: 20vw;
+    height: 100vh;
+    border: 2px solid black;
+}
