@@ -13,19 +13,18 @@
     flex-direction: column;
     width: 20vw;
     height: 100vh;
-    border: 2px solid black;
 }
 
 .navigation{
     width: 20vw;
     height: 85vh;
-    border: 2px solid black;
+    background-color: blue;
 }
 
 .logo{
     width: 20vw;
     height: 15vh;
-    border: 2px solid black;
+    background-color: black;
 }
 
 #logo{
@@ -39,19 +38,18 @@
     flex-direction: column;
     width: 60vw;
     height: 100vh;
-    border: 2px solid black;
 }
 
 .feed{
     width: 60vw;
-    height: 15vh;
-    border: 2px solid black;
+    height: 85vh;
+    background-color: purple;
 }
 
-.sbar{
+.searchbar{
     width: 60vw;
-    height: 85vh;
-    border: 2px solid black;
+    height: 15vh;
+    background-color: aqua;
 }
 
 
@@ -59,5 +57,5 @@
 .Friends{
     width: 20vw;
     height: 100vh;
-    border: 2px solid black;
+    background-color: brown;
 }
