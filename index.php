@@ -11,13 +11,15 @@
     <div class="main">
         <div class="NavLogo">
             <div class="logo">
-                <img src="pictures/birdlogo.png" alt="" height="100%" id="logo">
+                <img src="pictures/birdlogo.png" alt="" id="logo">
             </div>
             <div class="navigation"></div>
         </div>
 
         <div class="FeedSbar">
-            <div class="searchbar"></div>
+            <div class="searchbar">
+                <input type="search" id="search" value="search">
+            </div>
             <div class="feed"></div>
         </div>
 
