@@ -13,18 +13,23 @@
             <div class="logo">
                 <img src="pictures/birdlogo.png" alt="" id="logo">
             </div>
-            <div class="navigation"></div>
+            <div class="navigation">
+                <a href="">Home</a>
+                <a href="">News</a>
+                <a href="">Profile</a>
+                <a href="">Settings</a>
+            </div>
         </div>
 
         <div class="FeedSbar">
             <div class="searchbar">
-                <input type="search" id="search" value="search">
+                <input type="search" id="search" value="search" size="80">
             </div>
             <div class="feed"></div>
         </div>
 
         <div class="Friends">
-            
+            <h1>Friends</h1>
         </div>
 
     </div>
