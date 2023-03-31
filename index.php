@@ -1,3 +1,6 @@
+<?php
+    include("dbconnectie.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +17,11 @@
                 <img src="pictures/birdlogo.png" alt="" id="logo">
             </div>
             <div class="navigation">
-                <a href="">Home</a>
-                <a href="">News</a>
-                <a href="">Profile</a>
-                <a href="">Settings</a>
+                <a href="index.php">Home</a>
+                <a href="news.php">News</a>
+                <a href="profile.php">Profile</a>
+                <a href="settings.php">Settings</a>
+                <a href="post.php">post(test)</a>
             </div>
         </div>
 
@@ -25,7 +29,41 @@
             <div class="searchbar">
                 <input type="search" id="search" value="search" size="80">
             </div>
-            <div class="feed"></div>
+            <div class="feed">
+                <?php
+                    while( $row = $stmt->fetch(PDO::FETCH_OBJ) ) {
+                        echo "<br>User: <b>{$row->username}</b> heeft wachtwoord <b>{$row->password}</b>";
+                    }
+                ?>
+
+                <br>
+
+                <?php
+                    try {
+                        $query = $conn->prepare("SELECT * FROM tweet");
+                        $query->execute();
+                        $result = $query->fetchAll(PDO::FETCH_ASSOC);
+                        foreach($result as &$data) {
+                            echo $data["text"] . " ";
+                        }
+                    }   catch(PDOException $e) {
+                            die("Error!: " . $e->getMessage());
+                    }
+
+
+                    /*$sql = "CREATE TABLE inlog(
+                        id INT  AUTO_INCREMENT PRIMARY KEY,
+                        inlognaam VARCHAR(20) NOT NULL,
+                        voornaam VARCHAR(15) NOT NULL,
+                        achternaam VARCHAR(20) NOT NULL,
+                        telefoonnummer VARCHAR(15) NOT NULL,
+                        isVIP BOOLEAN DEFAULT TRUE
+                    )";
+
+                    $conn->query($sql);
+                    */
+                ?>
+            </div>
         </div>
 
         <div class="Friends">
@@ -33,5 +71,7 @@
         </div>
 
     </div>
+
+
 </body>
 </html>
