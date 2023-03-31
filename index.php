@@ -14,7 +14,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>s
+<body>
     <div class="main">
         <div class="NavLogo">
             <div class="logo">
