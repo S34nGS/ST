@@ -1,7 +1,11 @@
+<<<<<<< Updated upstream
 <?php
     include("dbconnectie.php");
 ?>
 <!DOCTYPE html>
+=======
+ <!DOCTYPE html>
+>>>>>>> Stashed changes
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +14,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
+<body>s
     <div class="main">
         <div class="NavLogo">
             <div class="logo">
