@@ -28,6 +28,8 @@
         <div class="FeedSbar">
             <div class="searchbar">
                 <input type="search" id="search" value="search" size="80">
+                <button id="inlog">Log In</button>
+                <input type="button" onclick="window.location.href='register.php';" value="Register">
             </div>
             <div class="feed">
                 <?php
@@ -38,31 +40,33 @@
 
                 <br>
 
-                <?php
-                    try {
-                        $query = $conn->prepare("SELECT * FROM tweet");
-                        $query->execute();
-                        $result = $query->fetchAll(PDO::FETCH_ASSOC);
-                        foreach($result as &$data) {
-                            echo $data["text"] . " ";
+                <div class="tweets">
+                    <?php
+                        try {
+                            $query = $conn->prepare("SELECT * FROM tweet");
+                            $query->execute();
+                            $result = $query->fetchAll(PDO::FETCH_ASSOC);
+                            foreach($result as &$data) {
+                                echo $data["text"] . " ";
+                            }
+                        }   catch(PDOException $e) {
+                                die("Error!: " . $e->getMessage());
                         }
-                    }   catch(PDOException $e) {
-                            die("Error!: " . $e->getMessage());
-                    }
 
 
-                    /*$sql = "CREATE TABLE inlog(
-                        id INT  AUTO_INCREMENT PRIMARY KEY,
-                        inlognaam VARCHAR(20) NOT NULL,
-                        voornaam VARCHAR(15) NOT NULL,
-                        achternaam VARCHAR(20) NOT NULL,
-                        telefoonnummer VARCHAR(15) NOT NULL,
-                        isVIP BOOLEAN DEFAULT TRUE
-                    )";
+                        /*$sql = "CREATE TABLE inlog(
+                            id INT  AUTO_INCREMENT PRIMARY KEY,
+                            inlognaam VARCHAR(20) NOT NULL,
+                            voornaam VARCHAR(15) NOT NULL,
+                            achternaam VARCHAR(20) NOT NULL,
+                            telefoonnummer VARCHAR(15) NOT NULL,
+                            isVIP BOOLEAN DEFAULT TRUE
+                        )";
 
-                    $conn->query($sql);
-                    */
-                ?>
+                        $conn->query($sql);
+                        */
+                    ?>
+                </div>
             </div>
         </div>
 
