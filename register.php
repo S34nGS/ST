@@ -25,5 +25,6 @@
     </form>
 
     <?php
- 
+        $sql = "INSERT INTO users (firstname, lastname, email)
+        VALUES ('John', 'Doe', 'john@example.com')";
     ?>
