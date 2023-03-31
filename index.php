@@ -1,9 +1,9 @@
-<<<<<<< Updated upstream
+
 
 <!DOCTYPE html>
-=======
+
  <!DOCTYPE html>
->>>>>>> Stashed changes
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
