@@ -1,4 +1,6 @@
-
+<?php
+    include("dbconnectie.php");
+?>
 
 <!DOCTYPE html>
 
@@ -34,16 +36,10 @@
                 <input type="button" onclick="window.location.href='register.php';" value="Register">
             </div>
             <div class="feed">
-<<<<<<< HEAD
 
-=======
-                <?php
-                    while( $row = $stmt->fetch(PDO::FETCH_OBJ) ) {
-                        echo "<br>User: <b>{$row->username}</b> heeft wachtwoord <b>{$row->password}</b>";
-                    }
-                ?>
 
                 <br>
+
 
                 <div class="tweets">
                     <?php
@@ -73,10 +69,7 @@
                         */
                     ?>
                 </div>
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
+
             </div>
         </div>
 
