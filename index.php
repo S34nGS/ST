@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 
- <!DOCTYPE html>
+
 
 <html lang="en">
 <head>
@@ -37,14 +37,13 @@
                 <input type="button" onclick="window.location.href='register.php';" value="Register">
             </div>
             <div class="feed">
-<<<<<<< HEAD
+
 
 
                 <br>
 
 
-=======
->>>>>>> master
+
                 <div class="tweets">
                     <?php
                         try {
