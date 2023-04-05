@@ -1,5 +1,6 @@
 <?php
     include("dbconnectie.php");
+    // if(isset($_GET['msg'])) echo "<h1>".$_GET['msg']."</h1>";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,18 +29,10 @@
         <div class="FeedSbar">
             <div class="searchbar">
                 <input type="search" id="search" value="search" size="80">
-                <button id="inlog">Log In</button>
+                <input type="button" onclick="window.location.href='login.html';" value="Login">
                 <input type="button" onclick="window.location.href='register.php';" value="Register">
             </div>
             <div class="feed">
-                <?php
-                    while( $row = $stmt->fetch(PDO::FETCH_OBJ) ) {
-                        echo "<br>User: <b>{$row->username}</b> heeft wachtwoord <b>{$row->password}</b>";
-                    }
-                ?>
-
-                <br>
-
                 <div class="tweets">
                     <?php
                         try {
