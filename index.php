@@ -2,7 +2,11 @@
     include("dbconnectie.php");
     // if(isset($_GET['msg'])) echo "<h1>".$_GET['msg']."</h1>";
 ?>
+
 <!DOCTYPE html>
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,6 +37,13 @@
                 <input type="button" onclick="window.location.href='register.php';" value="Register">
             </div>
             <div class="feed">
+
+
+
+                <br>
+
+
+
                 <div class="tweets">
                     <?php
                         try {
@@ -61,6 +72,7 @@
                         */
                     ?>
                 </div>
+
             </div>
         </div>
 
