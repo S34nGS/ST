@@ -20,4 +20,10 @@ if(isset($data[0]["id"])){
     echo "Gebruikersnaam of wachtwoord onbekend";
 }
 
-header("location:index.php?msg=ingelogd");
+
+if(isset($data[0]["id"])){
+    header("location:index.php?msg=ingelogd");
+}
+
+
+
