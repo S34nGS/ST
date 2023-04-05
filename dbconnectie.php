@@ -7,11 +7,11 @@
 
     
     $conn = new PDO($dsn, $usr, $pwd);
-<<<<<<< HEAD
+
 
     $sql = "SELECT * FROM users";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
-=======
+
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
->>>>>>> master
+
